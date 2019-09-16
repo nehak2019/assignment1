@@ -1,0 +1,74 @@
+body {
+	margin: 0;
+	font-family: sans-serif;
+}
+
+.main {
+	display: grid;
+	grid-template-rows: .4fr 1fr;
+	height:100vh;
+}
+
+.image-container {
+	background-image: url("./img/zodiac.jpg");
+	background-size: cover;
+	background-position: center;
+}
+
+.form-container {
+	display: grid;
+	grid-template-rows: .4fr auto;
+}
+
+h1 {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.form {
+	display:flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.form input {
+	margin-bottom: 20px;
+	padding: 10px;
+    background-color: #c03f652b;
+    border: none;
+    border-radius: 150px;
+}
+
+.submit {
+    background-color: #c03f65;
+    padding: 10px 40px;
+    border-radius: 150px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.submit:hover {
+	background-color: #962f4d;
+}
+
+label {
+	font-size: 16px
+}
+
+#zodiac-description {
+	padding: 50px 100px	;
+	text-align: center;
+}
+
+@media screen and (min-width: 550px) {
+	.main {
+		grid-template-columns: 1fr 1.5fr;
+		grid-template-rows: auto;
+	}
+	h1 {
+		margin-bottom: 100px;
+	}
+}
